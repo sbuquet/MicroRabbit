@@ -65,7 +65,7 @@ namespace MicroRabbit.Infra.Bus
             if (_handlers[eventName].Any(s => s.GetType() == handlerType))
             {
                 throw new ArgumentException(
-                    $"Handler Type {handlerType.Name} añredy is registered for '{eventName}'",
+                    $"Handler Type {handlerType.Name} is alredy registered for '{eventName}'",
                     nameof(handlerType));
             }
 
@@ -94,9 +94,7 @@ namespace MicroRabbit.Infra.Bus
                 consumer.Received += Consumer_Received;
 
                 channel.BasicConsume(eventName, true, consumer);
-
             }
-
         }
 
         private async Task Consumer_Received(object sender, BasicDeliverEventArgs e)
