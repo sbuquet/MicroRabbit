@@ -23,6 +23,7 @@ namespace MicroRabbit.Banking.Api.Controllers
             return Ok(_accountService.GetAccounts());
         }
 
+        // post api/banking
         [HttpPost]
         public IActionResult Post([FromBody] AccountTransfer accountTransfer)
         {
