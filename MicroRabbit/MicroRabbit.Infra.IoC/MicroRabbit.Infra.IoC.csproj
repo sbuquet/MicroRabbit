@@ -24,6 +24,8 @@
     <ProjectReference Include="..\MicroRabbit.Banking.Domain\MicroRabbit.Banking.Domain.csproj" />
     <ProjectReference Include="..\MicroRabbit.Dommain.Core\MicroRabbit.Dommain.Core.csproj" />
     <ProjectReference Include="..\MicroRabbit.Infra.Bus\MicroRabbit.Infra.Bus.csproj" />
+    <ProjectReference Include="..\MicroRabbit.Transfer.Application\MicroRabbit.Transfer.Application.csproj" />
+    <ProjectReference Include="..\MicroRabbit.Transfer.Data\MicroRabbit.Transfer.Data.csproj" />
   </ItemGroup>
 
 </Project>

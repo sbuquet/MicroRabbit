@@ -4,4 +4,13 @@
     <TargetFramework>netcoreapp3.1</TargetFramework>
   </PropertyGroup>
 
+  <ItemGroup>
+    <ProjectReference Include="..\MicroRabbit.Dommain.Core\MicroRabbit.Dommain.Core.csproj" />
+    <ProjectReference Include="..\MicroRabbit.Tranfer.Domain\MicroRabbit.Tranfer.Domain.csproj" />
+  </ItemGroup>
+
+  <ItemGroup>
+    <Folder Include="Model\" />
+  </ItemGroup>
+
 </Project>
