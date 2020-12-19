@@ -33,7 +33,6 @@ namespace MicroRabbit.Banking.Api
             });
 
             services.AddControllers();
-            //services.AddMvc();
 
             services.AddSwaggerGen(c =>
                 c.SwaggerDoc("v1", new OpenApiInfo { Title = "Banking service", Version = "v1" })
