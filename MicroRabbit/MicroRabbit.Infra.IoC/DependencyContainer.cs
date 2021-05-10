@@ -29,7 +29,7 @@ namespace MicroRabbit.Infra.IoC
             {
                 var scopeFactory = sp.GetRequiredService<IServiceScopeFactory>();
                 return new RabbitMQBus(sp.GetService<IMediator>(), scopeFactory);
-            });
+            }); 
 
             // Suscriptions
             services.AddTransient<TransferEventHandler>();
